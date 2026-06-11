@@ -42,7 +42,7 @@ adult-income-classification/
 
 ### Data Preprocessing & Feature Engineering
 - After splitting the data into train and test set, there 8 columns with categorical values. And most of the columns have multiple distinct values.
-- Since after applying OneHotEncoding each column produce multiple column, param value drop = 'first' was applied to avoid ### dummy variable trap ### and also
+- Since after applying OneHotEncoding each column produce multiple column, param value drop = 'first' was applied to avoid dummy variable trap and also
   it reduces few number of columns.
 - Standard Scalar was applied to the remaining numerical value data.
 - Dependent variable with value of income >50k or <50k, here labelEncoding was applied with value of '>50k' as 1, and '<50k' as 0.
