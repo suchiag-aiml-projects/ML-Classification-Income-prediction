@@ -8,7 +8,7 @@ This project uses various classification models to find which model works best t
 age,workclass,education,marital-status,occupation, relationship, race, sex, capital-gain,capital-loss,hours-per-week and native-country.
 - The models used in this prediction are:
 - Logistic Regression
-- K - Nearest Neighbors
+- K-Nearest Neighbors
 - Support Vector Machine SVM Model
 - Kernel SVM
 - Naive Bayes 
@@ -26,11 +26,30 @@ Link to the dataset: https://archive.ics.uci.edu/dataset/2/adult
 ## Project Phases
 
 ### Data Cleaning & Analysis
+- There are no null values in the dataset.
+- Column names were added from a seperate file adult.names.
 
+### Data Preprocessing & Feature Engineering
+- After splitting the data into train and test set, there 8 columns with categorical values. And most of the columns have multiple distinct values.
+- Since after applying OneHotEncoding each column produce multiple column, param value drop = 'first' was applied to avoid ### dummy variable trap ### and also
+  it reduces few number of columns.
+- Standard Scalar was applied to the remaining numerical value data.
+- Dependent variable with value of income >50k or <50k, here labelEncoding was applied with value of '>50k' as 1, and '<50k' as 0.
 
-### Creating new features such as price per square foot, age of property.
+### Model Selection & Fine Tuning
+- Training multiple models like Linear Regression, Naive-Bayes, Kernel-SVM, Decision Tree, Random Forest, and XGBoost.
+- There was performance improvement in XGBoost after tuning Hyperparameter from 86.7 to 87%.
 
-### Training multiple models like Linear Regression, Random Forest, and XGBoost.
+### Observation and Conclusion
+- It has 32,561 instances and 14 features — not too small, not too large — making it ideal for showcasing ML skills. The feature types include both categorical      and integer columns, and it contains missing values.
 
-
-
+adult-income-classification/
+│
+├── data/
+│   └── adult.csv
+│   └── adult.names    
+│
+├── notebooks/
+│   └── Adult_Income_Classification.jpynb
+│
+└── README.md
