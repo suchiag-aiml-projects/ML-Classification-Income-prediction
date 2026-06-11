@@ -23,10 +23,26 @@ This prediction helps to study and determine income inequality based on various 
 
 Link to the dataset: https://archive.ics.uci.edu/dataset/2/adult
 
+
+adult-income-classification/
+
+├── data/
+│   └── adult.csv
+│ 
+│ 
+│ 
+└── adult.names    
+├── notebooks/
+│   └── Adult_Income_Classification.jpynb
+│
+│ 
+└── README.md
+
 ## Project Phases
 
 ### Data Cleaning & Analysis
-- There are no null values in the dataset.
+- There were 3 columns with categorical values that contains value '?' as null as per the documentation, there values were converted to null and
+  then replaced with the most frequent values.
 - Column names were added from a seperate file adult.names.
 
 ### Data Preprocessing & Feature Engineering
@@ -43,13 +59,3 @@ Link to the dataset: https://archive.ics.uci.edu/dataset/2/adult
 ### Observation and Conclusion
 - It has 32,561 instances and 14 features — not too small, not too large — making it ideal for showcasing ML skills. The feature types include both categorical      and integer columns, and it contains missing values.
 
-adult-income-classification/
-│
-├── data/
-│   └── adult.csv
-│   └── adult.names    
-│
-├── notebooks/
-│   └── Adult_Income_Classification.jpynb
-│
-└── README.md
