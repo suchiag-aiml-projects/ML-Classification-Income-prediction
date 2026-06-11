@@ -23,7 +23,7 @@ This prediction helps to study and determine income inequality based on various 
 
 Link to the dataset: https://archive.ics.uci.edu/dataset/2/adult
 
-
+'''
 adult-income-classification/
 
 ├── data/
@@ -36,7 +36,7 @@ adult-income-classification/
 │   └── Adult_Income_Classification.jpynb
 │
 │ 
-└── README.md
+└── README.md'''
 
 ## Project Phases
 
