@@ -26,17 +26,12 @@ Link to the dataset: https://archive.ics.uci.edu/dataset/2/adult
 '''
 adult-income-classification/
 
-├── data/
-│   └── adult.csv
-│ 
-│ 
-│ 
-└── adult.names    
-├── notebooks/
-│   └── Adult_Income_Classification.jpynb
-│
-│ 
-└── README.md'''
+├── data/ adult.csv
+        / adult.names  
+
+├── notebooks/ Adult_Income_Classification.jpynb
+
+└── README.md
 
 ## Project Phases
 
@@ -59,3 +54,16 @@ adult-income-classification/
 ### Observation and Conclusion
 - It has 32,561 instances and 14 features — not too small, not too large — making it ideal for showcasing ML skills. The feature types include both categorical      and integer columns, and it contains missing values.
 
+## Accuracy Score of various models
+ - KNN  ---  83.16%,
+ - Logistic Regression -- 84.64%
+ - Support Vector Machine -- 84.7%
+ - Kernel Support Vector Machine -- 85.15%
+ - Naive Bayes -- 54%
+ - Decision Tree Classification -- 80.93%
+ - Random Forest Classification -- 85 %
+ - XGBoost (without hyperparamter tuning)  -- 86.49%
+ -  XGBoost (with hyperparamter tuning) -- 86.75%
+
+ ### XGBoost has the best accuracy. 
+ 
